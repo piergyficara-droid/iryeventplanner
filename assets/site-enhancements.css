@@ -1,0 +1,21 @@
+/* Language toggle and connected homepage additions. Original style.css is unchanged. */
+.nav-actions { display: flex; align-items: center; gap: 12px; }
+.language-switch { display: inline-flex; align-items: center; gap: 2px; flex: 0 0 auto; padding: 3px; border: 1px solid rgba(255,255,255,.8); border-radius: 999px; background: rgba(255,255,255,.96); box-shadow: 0 2px 8px rgba(0,0,0,.1); }
+.language-option { font-family: inherit; border: 0; cursor: pointer; display: inline-flex; align-items: center; justify-content: center; min-height: 32px; padding: 0 11px; border-radius: 999px; color: var(--text-dark); font-size: .76rem; font-weight: 700; letter-spacing: .03em; line-height: 1; text-decoration: none; white-space: nowrap; transition: var(--transition-fast); }
+.language-option[aria-pressed="true"] { color: #fff; background: var(--primary-color); }
+.language-option[aria-pressed="false"]:hover { color: var(--primary-color); background: rgba(107,30,46,.09); }
+.language-short { display: none; }
+.home-faq { padding: 80px 0; background: var(--bg-light); }
+.home-faq .section-header { max-width: 800px; margin: 0 auto 28px; }
+.home-faq .faq-list { max-width: 900px; margin: 0 auto; }
+.home-faq .faq-list details { padding: 19px 0; border-bottom: 1px solid var(--border-color); }
+.home-faq .faq-list summary { cursor: pointer; font-family: var(--font-serif); font-size: 1.2rem; color: var(--secondary-color); }
+.home-faq .faq-list p { max-width: 780px; margin-top: 11px; color: var(--text-light); line-height: 1.8; }
+@media (max-width: 768px) { .nav-container { gap: 10px; } .nav-actions { gap: 8px; } .language-full { display: none; } .language-short { display: inline; } .language-option { min-width: 36px; padding: 0 9px; } .home-faq { padding: 60px 0; } }
+@media (max-width: 380px) { .nav-logo { max-width: 116px; } .nav-actions { gap: 6px; } .language-option { min-width: 32px; padding: 0 7px; } }
+
+.multicultural-section .section-header { max-width: 850px; margin-left: auto; margin-right: auto; }
+
+.related-links { font-size: .95rem; } .related-links a, .sub-related a:not(.btn) { color: var(--primary-color); text-decoration: underline; }
+.sub-related { max-width: 900px; margin: 0 auto; padding: 40px 20px 0; } .sub-related ul { margin: 14px 0 0 20px; line-height: 2; }
+.privacy-content section { margin-bottom: 28px; }
